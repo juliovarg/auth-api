@@ -1,0 +1,715 @@
+2025-05-31 16:53:19,354 - INFO - BEGIN (implicit)
+2025-05-31 16:53:19,355 - INFO - PRAGMA main.table_info("roles")
+2025-05-31 16:53:19,355 - INFO - [raw sql] ()
+2025-05-31 16:53:19,357 - INFO - PRAGMA main.table_info("users")
+2025-05-31 16:53:19,358 - INFO - [raw sql] ()
+2025-05-31 16:53:19,359 - INFO - COMMIT
+2025-05-31 16:53:33,365 - INFO - BEGIN (implicit)
+2025-05-31 16:53:33,365 - INFO - PRAGMA main.table_info("roles")
+2025-05-31 16:53:33,366 - INFO - [raw sql] ()
+2025-05-31 16:53:33,368 - INFO - PRAGMA main.table_info("users")
+2025-05-31 16:53:33,368 - INFO - [raw sql] ()
+2025-05-31 16:53:33,370 - INFO - COMMIT
+2025-05-31 16:54:03,979 - INFO - BEGIN (implicit)
+2025-05-31 16:54:03,986 - INFO - SELECT users.id, users.username, users.email, users.hashed_password, users.is_active, users.is_superuser, users.role_id 
+FROM users 
+WHERE users.email = ?
+2025-05-31 16:54:03,988 - INFO - [generated in 0.00116s] ('leo@gmail.com',)
+2025-05-31 16:54:03,993 - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "E:\auth_api\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-05-31 16:54:04,385 - INFO - INSERT INTO users (username, email, hashed_password, is_active, is_superuser, role_id) VALUES (?, ?, ?, ?, ?, ?)
+2025-05-31 16:54:04,386 - INFO - [generated in 0.00079s] ('leo', 'leo@gmail.com', '$2b$12$Rrfb989T9N0UvkPuEmDpTugVza/3OvBKYbTk4wV1RHnR6kbgaR2JC', 1, 0, None)
+2025-05-31 16:54:04,389 - INFO - COMMIT
+2025-05-31 16:54:11,700 - INFO - BEGIN (implicit)
+2025-05-31 16:54:11,701 - INFO - SELECT users.id, users.username, users.email, users.hashed_password, users.is_active, users.is_superuser, users.role_id 
+FROM users 
+WHERE users.email = ?
+2025-05-31 16:54:11,701 - INFO - [cached since 7.715s ago] ('leo@gmail.com',)
+2025-05-31 16:54:12,065 - INFO - ROLLBACK
+2025-05-31 16:54:42,545 - INFO - BEGIN (implicit)
+2025-05-31 16:54:42,545 - INFO - SELECT users.id, users.username, users.email, users.hashed_password, users.is_active, users.is_superuser, users.role_id 
+FROM users 
+WHERE users.email = ?
+2025-05-31 16:54:42,546 - INFO - [cached since 38.56s ago] ('jj@gmail.com',)
+2025-05-31 16:54:42,908 - INFO - ROLLBACK
+2025-05-31 16:55:40,350 - INFO - BEGIN (implicit)
+2025-05-31 16:55:40,351 - INFO - PRAGMA main.table_info("roles")
+2025-05-31 16:55:40,351 - INFO - [raw sql] ()
+2025-05-31 16:55:40,353 - INFO - PRAGMA main.table_info("users")
+2025-05-31 16:55:40,354 - INFO - [raw sql] ()
+2025-05-31 16:55:40,355 - INFO - COMMIT
+2025-05-31 16:55:44,116 - INFO - BEGIN (implicit)
+2025-05-31 16:55:44,117 - INFO - PRAGMA main.table_info("roles")
+2025-05-31 16:55:44,117 - INFO - [raw sql] ()
+2025-05-31 16:55:44,119 - INFO - PRAGMA main.table_info("users")
+2025-05-31 16:55:44,120 - INFO - [raw sql] ()
+2025-05-31 16:55:44,121 - INFO - COMMIT
+2025-05-31 16:56:19,122 - INFO - BEGIN (implicit)
+2025-05-31 16:56:19,123 - INFO - PRAGMA main.table_info("roles")
+2025-05-31 16:56:19,123 - INFO - [raw sql] ()
+2025-05-31 16:56:19,125 - INFO - PRAGMA main.table_info("users")
+2025-05-31 16:56:19,125 - INFO - [raw sql] ()
+2025-05-31 16:56:19,126 - INFO - COMMIT
+2025-05-31 16:56:27,543 - INFO - BEGIN (implicit)
+2025-05-31 16:56:27,544 - INFO - PRAGMA main.table_info("roles")
+2025-05-31 16:56:27,544 - INFO - [raw sql] ()
+2025-05-31 16:56:27,546 - INFO - PRAGMA main.table_info("users")
+2025-05-31 16:56:27,546 - INFO - [raw sql] ()
+2025-05-31 16:56:27,547 - INFO - COMMIT
+2025-05-31 17:00:38,315 - INFO - BEGIN (implicit)
+2025-05-31 17:00:38,316 - INFO - PRAGMA main.table_info("roles")
+2025-05-31 17:00:38,317 - INFO - [raw sql] ()
+2025-05-31 17:00:38,319 - INFO - PRAGMA main.table_info("users")
+2025-05-31 17:00:38,319 - INFO - [raw sql] ()
+2025-05-31 17:00:38,321 - INFO - COMMIT
+2025-05-31 17:00:38,344 - INFO - BEGIN (implicit)
+2025-05-31 17:00:38,353 - INFO - SELECT users.id, users.username, users.email, users.hashed_password, users.is_active, users.is_superuser, users.role_id 
+FROM users 
+WHERE users.email = ?
+2025-05-31 17:00:38,354 - INFO - [generated in 0.00123s] ('jj@gmail.com',)
+2025-05-31 17:00:38,369 - INFO - BEGIN (implicit)
+2025-05-31 17:00:38,370 - INFO - SELECT users.id, users.username, users.email, users.hashed_password, users.is_active, users.is_superuser, users.role_id 
+FROM users 
+WHERE users.email = ?
+2025-05-31 17:00:38,370 - INFO - [cached since 0.01796s ago] ('jj@gmail.com',)
+2025-05-31 17:00:38,371 - INFO - BEGIN (implicit)
+2025-05-31 17:00:38,372 - INFO - SELECT users.id, users.username, users.email, users.hashed_password, users.is_active, users.is_superuser, users.role_id 
+FROM users 
+WHERE users.email = ?
+2025-05-31 17:00:38,372 - INFO - [cached since 0.01945s ago] ('jj@gmail.com',)
+2025-05-31 17:00:38,372 - INFO - BEGIN (implicit)
+2025-05-31 17:00:38,373 - INFO - SELECT users.id, users.username, users.email, users.hashed_password, users.is_active, users.is_superuser, users.role_id 
+FROM users 
+WHERE users.email = ?
+2025-05-31 17:00:38,373 - INFO - [cached since 0.02083s ago] ('jj@gmail.com',)
+2025-05-31 17:00:38,378 - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "E:\auth_api\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-05-31 17:00:38,769 - INFO - Usuário autenticado com sucesso: jj@gmail.com
+2025-05-31 17:00:38,770 - INFO - ROLLBACK
+2025-05-31 17:00:39,140 - INFO - Usuário autenticado com sucesso: jj@gmail.com
+2025-05-31 17:00:39,141 - INFO - ROLLBACK
+2025-05-31 17:00:39,499 - INFO - Usuário autenticado com sucesso: jj@gmail.com
+2025-05-31 17:00:39,500 - INFO - ROLLBACK
+2025-05-31 17:00:39,857 - INFO - Usuário autenticado com sucesso: jj@gmail.com
+2025-05-31 17:00:39,858 - INFO - ROLLBACK
+2025-05-31 17:00:50,749 - INFO - BEGIN (implicit)
+2025-05-31 17:00:50,749 - INFO - SELECT users.id, users.username, users.email, users.hashed_password, users.is_active, users.is_superuser, users.role_id 
+FROM users 
+WHERE users.email = ?
+2025-05-31 17:00:50,750 - INFO - [cached since 12.4s ago] ('jj@gmail.com',)
+2025-05-31 17:00:51,137 - INFO - Usuário autenticado com sucesso: jj@gmail.com
+2025-05-31 17:00:51,137 - INFO - ROLLBACK
+2025-05-31 17:01:46,371 - INFO - BEGIN (implicit)
+2025-05-31 17:01:46,372 - INFO - SELECT users.id, users.username, users.email, users.hashed_password, users.is_active, users.is_superuser, users.role_id 
+FROM users 
+WHERE users.email = ?
+2025-05-31 17:01:46,372 - INFO - [cached since 68.02s ago] ('paulo@gmail.com',)
+2025-05-31 17:01:46,726 - INFO - INSERT INTO users (username, email, hashed_password, is_active, is_superuser, role_id) VALUES (?, ?, ?, ?, ?, ?)
+2025-05-31 17:01:46,727 - INFO - [generated in 0.00078s] ('paulo', 'paulo@gmail.com', '$2b$12$oVGBdtMNxbO24kXdnytSv.GLF/1MgFlAC4DOLqmqe85zIgscZLCwa', 1, 0, None)
+2025-05-31 17:01:46,730 - INFO - COMMIT
+2025-05-31 17:01:46,784 - INFO - Novo usuário registrado: paulo@gmail.com
+2025-05-31 17:02:01,522 - INFO - BEGIN (implicit)
+2025-05-31 17:02:01,522 - INFO - SELECT users.id, users.username, users.email, users.hashed_password, users.is_active, users.is_superuser, users.role_id 
+FROM users 
+WHERE users.email = ?
+2025-05-31 17:02:01,523 - INFO - [cached since 83.17s ago] ('paulo@gmail.com',)
+2025-05-31 17:02:01,876 - INFO - Usuário autenticado com sucesso: paulo@gmail.com
+2025-05-31 17:02:01,877 - INFO - ROLLBACK
+2025-05-31 17:13:09,046 - INFO - BEGIN (implicit)
+2025-05-31 17:13:09,046 - INFO - PRAGMA main.table_info("roles")
+2025-05-31 17:13:09,047 - INFO - [raw sql] ()
+2025-05-31 17:13:09,048 - INFO - PRAGMA main.table_info("users")
+2025-05-31 17:13:09,049 - INFO - [raw sql] ()
+2025-05-31 17:13:09,050 - INFO - COMMIT
+2025-05-31 17:15:51,568 - INFO - BEGIN (implicit)
+2025-05-31 17:15:51,577 - INFO - SELECT users.id, users.username, users.email, users.hashed_password, users.is_active, users.is_superuser, users.role_id 
+FROM users 
+WHERE users.email = ?
+2025-05-31 17:15:51,578 - INFO - [generated in 0.00090s] ('teste@excluir.com',)
+2025-05-31 17:15:51,586 - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "E:\auth_api\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-05-31 17:15:52,000 - INFO - INSERT INTO users (username, email, hashed_password, is_active, is_superuser, role_id) VALUES (?, ?, ?, ?, ?, ?)
+2025-05-31 17:15:52,000 - INFO - [generated in 0.00062s] ('testeexcluir', 'teste@excluir.com', '$2b$12$LfkszBx9kv5NUjL4c3muU.t.d/lKLmrxhPNdnIKnr9Ggb3qC5IQnS', 1, 0, None)
+2025-05-31 17:15:52,004 - INFO - COMMIT
+2025-05-31 17:15:52,061 - INFO - Novo usuário registrado: teste@excluir.com
+2025-05-31 17:16:05,619 - INFO - BEGIN (implicit)
+2025-05-31 17:16:05,620 - INFO - SELECT users.id, users.username, users.email, users.hashed_password, users.is_active, users.is_superuser, users.role_id 
+FROM users 
+WHERE users.email = ?
+2025-05-31 17:16:05,621 - INFO - [cached since 14.04s ago] ('teste@excluir.com',)
+2025-05-31 17:16:05,989 - INFO - Usuário autenticado com sucesso: teste@excluir.com
+2025-05-31 17:16:05,990 - INFO - ROLLBACK
+2025-05-31 17:20:14,188 - INFO - BEGIN (implicit)
+2025-05-31 17:20:14,189 - INFO - PRAGMA main.table_info("roles")
+2025-05-31 17:20:14,189 - INFO - [raw sql] ()
+2025-05-31 17:20:14,191 - INFO - PRAGMA main.table_info("users")
+2025-05-31 17:20:14,191 - INFO - [raw sql] ()
+2025-05-31 17:20:14,193 - INFO - COMMIT
+2025-05-31 17:22:54,547 - INFO - BEGIN (implicit)
+2025-05-31 17:22:54,548 - INFO - PRAGMA main.table_info("roles")
+2025-05-31 17:22:54,548 - INFO - [raw sql] ()
+2025-05-31 17:22:54,550 - INFO - PRAGMA main.table_info("users")
+2025-05-31 17:22:54,550 - INFO - [raw sql] ()
+2025-05-31 17:22:54,552 - INFO - COMMIT
+2025-05-31 17:27:12,791 - INFO - BEGIN (implicit)
+2025-05-31 17:27:12,791 - INFO - PRAGMA main.table_info("roles")
+2025-05-31 17:27:12,792 - INFO - [raw sql] ()
+2025-05-31 17:27:12,793 - INFO - PRAGMA main.table_info("users")
+2025-05-31 17:27:12,794 - INFO - [raw sql] ()
+2025-05-31 17:27:12,795 - INFO - COMMIT
+2025-05-31 17:27:15,972 - INFO - BEGIN (implicit)
+2025-05-31 17:27:15,973 - INFO - PRAGMA main.table_info("roles")
+2025-05-31 17:27:15,973 - INFO - [raw sql] ()
+2025-05-31 17:27:15,975 - INFO - PRAGMA main.table_info("users")
+2025-05-31 17:27:15,975 - INFO - [raw sql] ()
+2025-05-31 17:27:15,977 - INFO - COMMIT
+2025-05-31 17:27:19,011 - INFO - BEGIN (implicit)
+2025-05-31 17:27:19,012 - INFO - PRAGMA main.table_info("roles")
+2025-05-31 17:27:19,012 - INFO - [raw sql] ()
+2025-05-31 17:27:19,019 - INFO - PRAGMA main.table_info("users")
+2025-05-31 17:27:19,019 - INFO - [raw sql] ()
+2025-05-31 17:27:19,022 - INFO - COMMIT
+2025-05-31 17:27:20,762 - INFO - BEGIN (implicit)
+2025-05-31 17:27:20,763 - INFO - PRAGMA main.table_info("roles")
+2025-05-31 17:27:20,763 - INFO - [raw sql] ()
+2025-05-31 17:27:20,765 - INFO - PRAGMA main.table_info("users")
+2025-05-31 17:27:20,766 - INFO - [raw sql] ()
+2025-05-31 17:27:20,767 - INFO - COMMIT
+2025-05-31 17:28:15,246 - INFO - BEGIN (implicit)
+2025-05-31 17:28:15,254 - INFO - SELECT users.id, users.username, users.email, users.hashed_password, users.is_active, users.is_superuser, users.role_id 
+FROM users 
+WHERE users.email = ?
+2025-05-31 17:28:15,255 - INFO - [generated in 0.00071s] ('teste@excluir.com',)
+2025-05-31 17:28:15,260 - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "E:\auth_api\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-05-31 17:28:15,660 - INFO - Usuário autenticado com sucesso: teste@excluir.com
+2025-05-31 17:28:15,661 - INFO - ROLLBACK
+2025-05-31 17:28:43,106 - INFO - BEGIN (implicit)
+2025-05-31 17:28:43,108 - INFO - SELECT users.id, users.username, users.email, users.hashed_password, users.is_active, users.is_superuser, users.role_id 
+FROM users 
+WHERE users.id = ?
+2025-05-31 17:28:43,113 - INFO - [generated in 0.00538s] (9,)
+2025-05-31 17:28:43,116 - INFO - ROLLBACK
+2025-05-31 17:28:43,121 - INFO - BEGIN (implicit)
+2025-05-31 17:28:43,121 - INFO - SELECT users.id, users.username, users.email, users.hashed_password, users.is_active, users.is_superuser, users.role_id 
+FROM users 
+WHERE users.id = ?
+2025-05-31 17:28:43,122 - INFO - [cached since 0.01422s ago] (9,)
+2025-05-31 17:28:43,126 - INFO - DELETE FROM users WHERE users.id = ?
+2025-05-31 17:28:43,127 - INFO - [generated in 0.00054s] (9,)
+2025-05-31 17:28:43,132 - INFO - COMMIT
+2025-05-31 17:28:52,636 - INFO - BEGIN (implicit)
+2025-05-31 17:28:52,637 - INFO - SELECT users.id, users.username, users.email, users.hashed_password, users.is_active, users.is_superuser, users.role_id 
+FROM users 
+WHERE users.email = ?
+2025-05-31 17:28:52,637 - INFO - [cached since 37.38s ago] ('teste@excluir.com',)
+2025-05-31 17:28:52,639 - WARNING - Tentativa de login inválida para: teste@excluir.com
+2025-05-31 17:28:52,639 - INFO - ROLLBACK
+2025-05-31 17:33:54,506 - INFO - BEGIN (implicit)
+2025-05-31 17:33:54,507 - INFO - SELECT users.id, users.username, users.email, users.hashed_password, users.is_active, users.is_superuser, users.role_id 
+FROM users 
+WHERE users.email = ?
+2025-05-31 17:33:54,507 - INFO - [cached since 339.3s ago] ('jj@gmail.com',)
+2025-05-31 17:33:54,861 - INFO - Usuário autenticado com sucesso: jj@gmail.com
+2025-05-31 17:33:54,861 - INFO - ROLLBACK
+2025-05-31 17:35:28,903 - INFO - BEGIN (implicit)
+2025-05-31 17:35:28,904 - INFO - SELECT users.id, users.username, users.email, users.hashed_password, users.is_active, users.is_superuser, users.role_id 
+FROM users 
+WHERE users.id = ?
+2025-05-31 17:35:28,905 - INFO - [cached since 405.8s ago] (5,)
+2025-05-31 17:35:28,906 - INFO - ROLLBACK
+2025-05-31 17:35:28,907 - INFO - BEGIN (implicit)
+2025-05-31 17:35:28,908 - INFO - SELECT users.id, users.username, users.email, users.hashed_password, users.is_active, users.is_superuser, users.role_id 
+FROM users 
+WHERE users.id = ?
+2025-05-31 17:35:28,908 - INFO - [cached since 405.8s ago] (5,)
+2025-05-31 17:35:28,910 - INFO - DELETE FROM users WHERE users.id = ?
+2025-05-31 17:35:28,910 - INFO - [cached since 405.8s ago] (5,)
+2025-05-31 17:35:28,913 - INFO - COMMIT
+2025-05-31 17:35:44,843 - INFO - BEGIN (implicit)
+2025-05-31 17:35:44,844 - INFO - SELECT users.id, users.username, users.email, users.hashed_password, users.is_active, users.is_superuser, users.role_id 
+FROM users 
+WHERE users.email = ?
+2025-05-31 17:35:44,844 - INFO - [cached since 449.6s ago] ('jj@gmail.com',)
+2025-05-31 17:35:44,845 - WARNING - Tentativa de login inválida para: jj@gmail.com
+2025-05-31 17:35:44,846 - INFO - ROLLBACK
+2025-05-31 17:38:38,027 - INFO - BEGIN (implicit)
+2025-05-31 17:38:38,028 - INFO - SELECT users.id, users.username, users.email, users.hashed_password, users.is_active, users.is_superuser, users.role_id 
+FROM users 
+WHERE users.email = ?
+2025-05-31 17:38:38,028 - INFO - [cached since 622.8s ago] ('jj@gmail.com',)
+2025-05-31 17:38:38,406 - INFO - INSERT INTO users (username, email, hashed_password, is_active, is_superuser, role_id) VALUES (?, ?, ?, ?, ?, ?)
+2025-05-31 17:38:38,407 - INFO - [generated in 0.00067s] ('jj', 'jj@gmail.com', '$2b$12$u7Bu3R5rSiq.dvs0dHgtxOQwbEL7nhm2ZzttJAgf3GmaOGaICc2p.', 1, 0, None)
+2025-05-31 17:38:38,410 - INFO - COMMIT
+2025-05-31 17:38:38,462 - INFO - Novo usuário registrado: jj@gmail.com
+2025-05-31 17:43:02,978 - INFO - BEGIN (implicit)
+2025-05-31 17:43:02,979 - INFO - SELECT users.id, users.username, users.email, users.hashed_password, users.is_active, users.is_superuser, users.role_id 
+FROM users 
+WHERE users.email = ?
+2025-05-31 17:43:02,979 - INFO - [cached since 887.7s ago] ('jj@gmail.com',)
+2025-05-31 17:43:03,335 - INFO - Usuário autenticado com sucesso: jj@gmail.com
+2025-05-31 17:43:03,336 - INFO - ROLLBACK
+2025-05-31 17:43:09,103 - INFO - BEGIN (implicit)
+2025-05-31 17:43:09,104 - INFO - SELECT users.id, users.username, users.email, users.hashed_password, users.is_active, users.is_superuser, users.role_id 
+FROM users 
+WHERE users.id = ?
+2025-05-31 17:43:09,104 - INFO - [cached since 866s ago] (9,)
+2025-05-31 17:43:09,106 - INFO - ROLLBACK
+2025-05-31 17:43:09,107 - INFO - BEGIN (implicit)
+2025-05-31 17:43:09,107 - INFO - SELECT users.id, users.username, users.email, users.hashed_password, users.is_active, users.is_superuser, users.role_id 
+FROM users 
+WHERE users.id = ?
+2025-05-31 17:43:09,108 - INFO - [cached since 866s ago] (9,)
+2025-05-31 17:43:09,109 - INFO - DELETE FROM users WHERE users.id = ?
+2025-05-31 17:43:09,116 - INFO - [cached since 866s ago] (9,)
+2025-05-31 17:43:09,119 - INFO - COMMIT
+2025-05-31 17:43:18,106 - INFO - BEGIN (implicit)
+2025-05-31 17:43:18,107 - INFO - SELECT users.id, users.username, users.email, users.hashed_password, users.is_active, users.is_superuser, users.role_id 
+FROM users 
+WHERE users.email = ?
+2025-05-31 17:43:18,107 - INFO - [cached since 902.9s ago] ('jj@gmail.com',)
+2025-05-31 17:43:18,108 - WARNING - Tentativa de login inválida para: jj@gmail.com
+2025-05-31 17:43:18,109 - INFO - ROLLBACK
+2025-05-31 17:43:25,518 - INFO - BEGIN (implicit)
+2025-05-31 17:43:25,519 - INFO - SELECT users.id, users.username, users.email, users.hashed_password, users.is_active, users.is_superuser, users.role_id 
+FROM users 
+WHERE users.email = ?
+2025-05-31 17:43:25,519 - INFO - [cached since 910.3s ago] ('jj@gmail.com',)
+2025-05-31 17:43:25,880 - INFO - INSERT INTO users (username, email, hashed_password, is_active, is_superuser, role_id) VALUES (?, ?, ?, ?, ?, ?)
+2025-05-31 17:43:25,881 - INFO - [cached since 287.5s ago] ('jj@gmail.com', 'jj@gmail.com', '$2b$12$RJS6IJ2tijrfblcsAGqfV.FzmnA8YyFmMZlKqxc0KPzGcPBRmTmL2', 1, 0, None)
+2025-05-31 17:43:25,883 - INFO - COMMIT
+2025-05-31 17:43:25,940 - INFO - Novo usuário registrado: jj@gmail.com
+2025-05-31 17:43:29,639 - INFO - BEGIN (implicit)
+2025-05-31 17:43:29,640 - INFO - SELECT users.id, users.username, users.email, users.hashed_password, users.is_active, users.is_superuser, users.role_id 
+FROM users 
+WHERE users.email = ?
+2025-05-31 17:43:29,640 - INFO - [cached since 914.4s ago] ('jj@gmail.com',)
+2025-05-31 17:43:30,001 - INFO - Usuário autenticado com sucesso: jj@gmail.com
+2025-05-31 17:43:30,002 - INFO - ROLLBACK
+2025-05-31 17:48:15,909 - INFO - BEGIN (implicit)
+2025-05-31 17:48:15,910 - INFO - SELECT users.id, users.username, users.email, users.hashed_password, users.is_active, users.is_superuser, users.role_id 
+FROM users 
+WHERE users.email = ?
+2025-05-31 17:48:15,910 - INFO - [cached since 1201s ago] ('jj@gmail.com',)
+2025-05-31 17:48:16,270 - INFO - Usuário autenticado com sucesso: jj@gmail.com
+2025-05-31 17:48:16,270 - INFO - ROLLBACK
+2025-05-31 17:57:51,075 - INFO - BEGIN (implicit)
+2025-05-31 17:57:51,076 - INFO - PRAGMA main.table_info("roles")
+2025-05-31 17:57:51,076 - INFO - [raw sql] ()
+2025-05-31 17:57:51,078 - INFO - PRAGMA main.table_info("users")
+2025-05-31 17:57:51,079 - INFO - [raw sql] ()
+2025-05-31 17:57:51,080 - INFO - COMMIT
+2025-05-31 17:58:02,262 - INFO - BEGIN (implicit)
+2025-05-31 17:58:02,262 - INFO - PRAGMA main.table_info("roles")
+2025-05-31 17:58:02,263 - INFO - [raw sql] ()
+2025-05-31 17:58:02,265 - INFO - PRAGMA main.table_info("users")
+2025-05-31 17:58:02,265 - INFO - [raw sql] ()
+2025-05-31 17:58:02,267 - INFO - COMMIT
+2025-05-31 17:58:14,746 - INFO - BEGIN (implicit)
+2025-05-31 17:58:14,747 - INFO - PRAGMA main.table_info("roles")
+2025-05-31 17:58:14,748 - INFO - [raw sql] ()
+2025-05-31 17:58:14,750 - INFO - PRAGMA main.table_info("users")
+2025-05-31 17:58:14,750 - INFO - [raw sql] ()
+2025-05-31 17:58:14,752 - INFO - COMMIT
+2025-05-31 17:59:59,605 - INFO - BEGIN (implicit)
+2025-05-31 17:59:59,606 - INFO - PRAGMA main.table_info("roles")
+2025-05-31 17:59:59,606 - INFO - [raw sql] ()
+2025-05-31 17:59:59,608 - INFO - PRAGMA main.table_info("users")
+2025-05-31 17:59:59,608 - INFO - [raw sql] ()
+2025-05-31 17:59:59,610 - INFO - COMMIT
+2025-05-31 18:00:11,809 - INFO - BEGIN (implicit)
+2025-05-31 18:00:11,810 - INFO - PRAGMA main.table_info("roles")
+2025-05-31 18:00:11,810 - INFO - [raw sql] ()
+2025-05-31 18:00:11,812 - INFO - PRAGMA main.table_info("users")
+2025-05-31 18:00:11,813 - INFO - [raw sql] ()
+2025-05-31 18:00:11,814 - INFO - COMMIT
+2025-05-31 18:07:15,971 - INFO - BEGIN (implicit)
+2025-05-31 18:07:15,971 - INFO - PRAGMA main.table_info("roles")
+2025-05-31 18:07:15,972 - INFO - [raw sql] ()
+2025-05-31 18:07:15,973 - INFO - PRAGMA main.table_info("users")
+2025-05-31 18:07:15,974 - INFO - [raw sql] ()
+2025-05-31 18:07:15,975 - INFO - COMMIT
+2025-05-31 18:07:17,891 - INFO - BEGIN (implicit)
+2025-05-31 18:07:17,891 - INFO - PRAGMA main.table_info("roles")
+2025-05-31 18:07:17,892 - INFO - [raw sql] ()
+2025-05-31 18:07:17,894 - INFO - PRAGMA main.table_info("users")
+2025-05-31 18:07:17,894 - INFO - [raw sql] ()
+2025-05-31 18:07:17,896 - INFO - COMMIT
+2025-05-31 18:07:37,341 - INFO - BEGIN (implicit)
+2025-05-31 18:07:37,342 - INFO - PRAGMA main.table_info("roles")
+2025-05-31 18:07:37,342 - INFO - [raw sql] ()
+2025-05-31 18:07:37,344 - INFO - PRAGMA main.table_info("users")
+2025-05-31 18:07:37,344 - INFO - [raw sql] ()
+2025-05-31 18:07:37,346 - INFO - COMMIT
+2025-05-31 18:08:14,407 - INFO - BEGIN (implicit)
+2025-05-31 18:08:14,408 - INFO - PRAGMA main.table_info("roles")
+2025-05-31 18:08:14,408 - INFO - [raw sql] ()
+2025-05-31 18:08:14,410 - INFO - PRAGMA main.table_info("users")
+2025-05-31 18:08:14,411 - INFO - [raw sql] ()
+2025-05-31 18:08:14,412 - INFO - COMMIT
+2025-05-31 18:08:33,664 - INFO - BEGIN (implicit)
+2025-05-31 18:08:33,672 - INFO - SELECT users.id, users.username, users.email, users.hashed_password, users.is_active, users.is_superuser, users.role_id 
+FROM users 
+WHERE users.email = ?
+2025-05-31 18:08:33,673 - INFO - [generated in 0.00094s] ('jj@gmail.com',)
+2025-05-31 18:08:33,679 - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "E:\auth_api\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-05-31 18:08:34,066 - INFO - Usuário autenticado com sucesso: jj@gmail.com
+2025-05-31 18:08:34,067 - INFO - ROLLBACK
+2025-05-31 18:10:13,181 - INFO - BEGIN (implicit)
+2025-05-31 18:10:13,182 - INFO - PRAGMA main.table_info("roles")
+2025-05-31 18:10:13,182 - INFO - [raw sql] ()
+2025-05-31 18:10:13,184 - INFO - PRAGMA main.table_info("users")
+2025-05-31 18:10:13,184 - INFO - [raw sql] ()
+2025-05-31 18:10:13,186 - INFO - COMMIT
+2025-05-31 18:12:04,671 - INFO - BEGIN (implicit)
+2025-05-31 18:12:04,693 - INFO - SELECT users.id, users.username, users.email, users.hashed_password, users.is_active, users.is_superuser, users.role_id 
+FROM users 
+WHERE users.email = ?
+2025-05-31 18:12:04,694 - INFO - [generated in 0.00105s] ('julio@teste.com',)
+2025-05-31 18:12:04,701 - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "E:\auth_api\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-05-31 18:12:05,118 - INFO - INSERT INTO users (username, email, hashed_password, is_active, is_superuser, role_id) VALUES (?, ?, ?, ?, ?, ?)
+2025-05-31 18:12:05,119 - INFO - [generated in 0.00076s] ('julio', 'julio@teste.com', '$2b$12$SNujzK78lpJ7OTyeK.TqMuzIVxSRLCtbDT9kA.uLK7K1/fF4c4WuC', 1, 0, None)
+2025-05-31 18:12:05,120 - INFO - ROLLBACK
+2025-05-31 18:12:44,854 - INFO - BEGIN (implicit)
+2025-05-31 18:12:44,855 - INFO - PRAGMA main.table_info("roles")
+2025-05-31 18:12:44,855 - INFO - [raw sql] ()
+2025-05-31 18:12:44,857 - INFO - PRAGMA main.table_info("users")
+2025-05-31 18:12:44,857 - INFO - [raw sql] ()
+2025-05-31 18:12:44,859 - INFO - COMMIT
+2025-05-31 18:15:13,942 - INFO - BEGIN (implicit)
+2025-05-31 18:15:13,943 - INFO - PRAGMA main.table_info("roles")
+2025-05-31 18:15:13,943 - INFO - [raw sql] ()
+2025-05-31 18:15:13,946 - INFO - PRAGMA main.table_info("users")
+2025-05-31 18:15:13,946 - INFO - [raw sql] ()
+2025-05-31 18:15:13,947 - INFO - COMMIT
+2025-05-31 18:15:16,886 - INFO - BEGIN (implicit)
+2025-05-31 18:15:16,887 - INFO - PRAGMA main.table_info("roles")
+2025-05-31 18:15:16,887 - INFO - [raw sql] ()
+2025-05-31 18:15:16,890 - INFO - PRAGMA main.table_info("users")
+2025-05-31 18:15:16,890 - INFO - [raw sql] ()
+2025-05-31 18:15:16,891 - INFO - COMMIT
+2025-05-31 18:15:29,660 - INFO - BEGIN (implicit)
+2025-05-31 18:15:29,661 - INFO - PRAGMA main.table_info("roles")
+2025-05-31 18:15:29,661 - INFO - [raw sql] ()
+2025-05-31 18:15:29,664 - INFO - PRAGMA main.table_info("users")
+2025-05-31 18:15:29,664 - INFO - [raw sql] ()
+2025-05-31 18:15:29,666 - INFO - COMMIT
+2025-05-31 18:15:32,783 - INFO - BEGIN (implicit)
+2025-05-31 18:15:32,783 - INFO - PRAGMA main.table_info("roles")
+2025-05-31 18:15:32,784 - INFO - [raw sql] ()
+2025-05-31 18:15:32,786 - INFO - PRAGMA main.table_info("users")
+2025-05-31 18:15:32,787 - INFO - [raw sql] ()
+2025-05-31 18:15:32,788 - INFO - COMMIT
+2025-05-31 18:15:34,670 - INFO - BEGIN (implicit)
+2025-05-31 18:15:34,671 - INFO - PRAGMA main.table_info("roles")
+2025-05-31 18:15:34,671 - INFO - [raw sql] ()
+2025-05-31 18:15:34,673 - INFO - PRAGMA main.table_info("users")
+2025-05-31 18:15:34,674 - INFO - [raw sql] ()
+2025-05-31 18:15:34,675 - INFO - COMMIT
+2025-05-31 18:15:55,227 - INFO - API iniciada
+2025-05-31 18:15:55,234 - INFO - BEGIN (implicit)
+2025-05-31 18:15:55,234 - INFO - PRAGMA main.table_info("roles")
+2025-05-31 18:15:55,235 - INFO - [raw sql] ()
+2025-05-31 18:15:55,236 - INFO - PRAGMA main.table_info("users")
+2025-05-31 18:15:55,236 - INFO - [raw sql] ()
+2025-05-31 18:15:55,238 - INFO - COMMIT
+2025-05-31 18:16:32,418 - INFO - API iniciada
+2025-05-31 18:16:32,425 - INFO - BEGIN (implicit)
+2025-05-31 18:16:32,426 - INFO - PRAGMA main.table_info("roles")
+2025-05-31 18:16:32,426 - INFO - [raw sql] ()
+2025-05-31 18:16:32,428 - INFO - PRAGMA main.table_info("users")
+2025-05-31 18:16:32,428 - INFO - [raw sql] ()
+2025-05-31 18:16:32,429 - INFO - COMMIT
+2025-05-31 18:18:07,992 - INFO - API iniciada
+2025-05-31 18:18:08,000 - INFO - BEGIN (implicit)
+2025-05-31 18:18:08,000 - INFO - PRAGMA main.table_info("roles")
+2025-05-31 18:18:08,001 - INFO - [raw sql] ()
+2025-05-31 18:18:08,002 - INFO - PRAGMA main.table_info("users")
+2025-05-31 18:18:08,002 - INFO - [raw sql] ()
+2025-05-31 18:18:08,003 - INFO - COMMIT
+2025-05-31 18:19:51,722 - INFO - API iniciada
+2025-05-31 18:19:51,730 - INFO - BEGIN (implicit)
+2025-05-31 18:19:51,730 - INFO - PRAGMA main.table_info("roles")
+2025-05-31 18:19:51,730 - INFO - [raw sql] ()
+2025-05-31 18:19:51,733 - INFO - PRAGMA main.table_info("users")
+2025-05-31 18:19:51,733 - INFO - [raw sql] ()
+2025-05-31 18:19:51,734 - INFO - COMMIT
+2025-05-31 18:20:02,332 - INFO - API iniciada
+2025-05-31 18:20:02,341 - INFO - BEGIN (implicit)
+2025-05-31 18:20:02,342 - INFO - PRAGMA main.table_info("roles")
+2025-05-31 18:20:02,342 - INFO - [raw sql] ()
+2025-05-31 18:20:02,344 - INFO - PRAGMA main.table_info("users")
+2025-05-31 18:20:02,344 - INFO - [raw sql] ()
+2025-05-31 18:20:02,345 - INFO - COMMIT
+2025-05-31 18:20:04,303 - INFO - API iniciada
+2025-05-31 18:20:04,310 - INFO - BEGIN (implicit)
+2025-05-31 18:20:04,310 - INFO - PRAGMA main.table_info("roles")
+2025-05-31 18:20:04,311 - INFO - [raw sql] ()
+2025-05-31 18:20:04,312 - INFO - PRAGMA main.table_info("users")
+2025-05-31 18:20:04,312 - INFO - [raw sql] ()
+2025-05-31 18:20:04,314 - INFO - COMMIT
+2025-05-31 18:20:06,171 - INFO - API iniciada
+2025-05-31 18:20:06,177 - INFO - BEGIN (implicit)
+2025-05-31 18:20:06,178 - INFO - PRAGMA main.table_info("roles")
+2025-05-31 18:20:06,178 - INFO - [raw sql] ()
+2025-05-31 18:20:06,180 - INFO - PRAGMA main.table_info("users")
+2025-05-31 18:20:06,180 - INFO - [raw sql] ()
+2025-05-31 18:20:06,182 - INFO - COMMIT
+2025-05-31 18:20:08,566 - INFO - API iniciada
+2025-05-31 18:20:08,573 - INFO - BEGIN (implicit)
+2025-05-31 18:20:08,574 - INFO - PRAGMA main.table_info("roles")
+2025-05-31 18:20:08,574 - INFO - [raw sql] ()
+2025-05-31 18:20:08,576 - INFO - PRAGMA main.table_info("users")
+2025-05-31 18:20:08,576 - INFO - [raw sql] ()
+2025-05-31 18:20:08,578 - INFO - COMMIT
+2025-05-31 18:20:10,897 - INFO - API iniciada
+2025-05-31 18:20:10,904 - INFO - BEGIN (implicit)
+2025-05-31 18:20:10,905 - INFO - PRAGMA main.table_info("roles")
+2025-05-31 18:20:10,905 - INFO - [raw sql] ()
+2025-05-31 18:20:10,907 - INFO - PRAGMA main.table_info("users")
+2025-05-31 18:20:10,907 - INFO - [raw sql] ()
+2025-05-31 18:20:10,908 - INFO - COMMIT
+2025-05-31 18:20:13,535 - INFO - API iniciada
+2025-05-31 18:20:13,546 - INFO - BEGIN (implicit)
+2025-05-31 18:20:13,547 - INFO - PRAGMA main.table_info("roles")
+2025-05-31 18:20:13,547 - INFO - [raw sql] ()
+2025-05-31 18:20:13,549 - INFO - PRAGMA main.table_info("users")
+2025-05-31 18:20:13,549 - INFO - [raw sql] ()
+2025-05-31 18:20:13,551 - INFO - COMMIT
+2025-05-31 18:20:15,517 - INFO - API iniciada
+2025-05-31 18:20:15,526 - INFO - BEGIN (implicit)
+2025-05-31 18:20:15,527 - INFO - PRAGMA main.table_info("roles")
+2025-05-31 18:20:15,527 - INFO - [raw sql] ()
+2025-05-31 18:20:15,529 - INFO - PRAGMA main.table_info("users")
+2025-05-31 18:20:15,529 - INFO - [raw sql] ()
+2025-05-31 18:20:15,530 - INFO - COMMIT
+2025-05-31 18:20:17,479 - INFO - API iniciada
+2025-05-31 18:20:17,488 - INFO - BEGIN (implicit)
+2025-05-31 18:20:17,488 - INFO - PRAGMA main.table_info("roles")
+2025-05-31 18:20:17,489 - INFO - [raw sql] ()
+2025-05-31 18:20:17,491 - INFO - PRAGMA main.table_info("users")
+2025-05-31 18:20:17,491 - INFO - [raw sql] ()
+2025-05-31 18:20:17,493 - INFO - COMMIT
+2025-05-31 18:21:28,525 - INFO - BEGIN (implicit)
+2025-05-31 18:21:28,532 - INFO - SELECT users.id, users.username, users.email, users.hashed_password, users.is_active, users.is_superuser, users.role_id 
+FROM users 
+WHERE users.email = ?
+2025-05-31 18:21:28,533 - INFO - [generated in 0.00072s] ('julio@teste.com',)
+2025-05-31 18:21:28,538 - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "E:\auth_api\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-05-31 18:21:28,942 - INFO - INSERT INTO users (username, email, hashed_password, is_active, is_superuser, role_id) VALUES (?, ?, ?, ?, ?, ?)
+2025-05-31 18:21:28,943 - INFO - [generated in 0.00085s] ('julio', 'julio@teste.com', '$2b$12$Vn8zlw4Y/Hwt8rEV7Sz4futSsQUiDjRC.CyicIJ3DlUJWX//u0zOe', 1, 0, None)
+2025-05-31 18:21:28,945 - INFO - ROLLBACK
+2025-05-31 18:22:47,599 - INFO - BEGIN (implicit)
+2025-05-31 18:22:47,600 - INFO - SELECT users.id, users.username, users.email, users.hashed_password, users.is_active, users.is_superuser, users.role_id 
+FROM users 
+WHERE users.email = ?
+2025-05-31 18:22:47,600 - INFO - [cached since 79.07s ago] ('julio@teste.com',)
+2025-05-31 18:22:47,967 - INFO - INSERT INTO users (username, email, hashed_password, is_active, is_superuser, role_id) VALUES (?, ?, ?, ?, ?, ?)
+2025-05-31 18:22:47,968 - INFO - [cached since 79.03s ago] ('juliao', 'julio@teste.com', '$2b$12$QlOZAjAX2QH1PExSoXwM7ODNPStA/xkQgkXb59KxHdrsC1Nk3S92W', 1, 0, None)
+2025-05-31 18:22:47,971 - INFO - COMMIT
+2025-05-31 18:22:48,021 - INFO - Novo usuário registrado: julio@teste.com
+2025-05-31 18:23:02,476 - INFO - BEGIN (implicit)
+2025-05-31 18:23:02,476 - INFO - SELECT users.id, users.username, users.email, users.hashed_password, users.is_active, users.is_superuser, users.role_id 
+FROM users 
+WHERE users.email = ?
+2025-05-31 18:23:02,477 - INFO - [cached since 93.94s ago] ('aa@gmail.com',)
+2025-05-31 18:23:02,833 - INFO - INSERT INTO users (username, email, hashed_password, is_active, is_superuser, role_id) VALUES (?, ?, ?, ?, ?, ?)
+2025-05-31 18:23:02,834 - INFO - [cached since 93.89s ago] ('aa', 'aa@gmail.com', '$2b$12$ELWW/6efdwMYYA5PYust2efeq9H/Hn./mVC1raO9YhoiSk/FAbG42', 1, 0, None)
+2025-05-31 18:23:02,836 - INFO - COMMIT
+2025-05-31 18:23:02,881 - INFO - Novo usuário registrado: aa@gmail.com
+2025-05-31 18:23:56,184 - INFO - BEGIN (implicit)
+2025-05-31 18:23:56,185 - INFO - SELECT users.id, users.username, users.email, users.hashed_password, users.is_active, users.is_superuser, users.role_id 
+FROM users 
+WHERE users.email = ?
+2025-05-31 18:23:56,186 - INFO - [cached since 147.7s ago] ('julio@teaaste.com',)
+2025-05-31 18:23:56,549 - INFO - INSERT INTO users (username, email, hashed_password, is_active, is_superuser, role_id) VALUES (?, ?, ?, ?, ?, ?)
+2025-05-31 18:23:56,550 - INFO - [cached since 147.6s ago] ('juliaaao', 'julio@teaaste.com', '$2b$12$6yq7IrZboC33fWei1IyJ8Oa5XZFgrlwrfG7Nazu.1WZmegk6qE.Am', 1, 0, None)
+2025-05-31 18:23:56,553 - INFO - COMMIT
+2025-05-31 18:23:56,597 - INFO - Novo usuário registrado: julio@teaaste.com
+2025-05-31 18:24:10,749 - INFO - BEGIN (implicit)
+2025-05-31 18:24:10,750 - INFO - SELECT users.id, users.username, users.email, users.hashed_password, users.is_active, users.is_superuser, users.role_id 
+FROM users 
+WHERE users.email = ?
+2025-05-31 18:24:10,751 - INFO - [cached since 162.2s ago] ('julio@teaaste.com',)
+2025-05-31 18:24:11,136 - INFO - Usuário autenticado com sucesso: julio@teaaste.com
+2025-05-31 18:24:11,137 - INFO - ROLLBACK
+2025-05-31 18:25:37,875 - INFO - API iniciada
+2025-05-31 18:25:37,884 - INFO - BEGIN (implicit)
+2025-05-31 18:25:37,885 - INFO - PRAGMA main.table_info("roles")
+2025-05-31 18:25:37,885 - INFO - [raw sql] ()
+2025-05-31 18:25:37,887 - INFO - PRAGMA main.table_info("users")
+2025-05-31 18:25:37,887 - INFO - [raw sql] ()
+2025-05-31 18:25:37,889 - INFO - COMMIT
+2025-05-31 18:25:39,202 - INFO - BEGIN (implicit)
+2025-05-31 18:25:39,211 - INFO - SELECT users.id, users.username, users.email, users.hashed_password, users.is_active, users.is_superuser, users.role_id 
+FROM users 
+WHERE users.email = ?
+2025-05-31 18:25:39,212 - INFO - [generated in 0.00088s] ('julio@teaaste.com',)
+2025-05-31 18:25:39,217 - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "E:\auth_api\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-05-31 18:25:39,648 - INFO - Usuário autenticado com sucesso: julio@teaaste.com
+2025-05-31 18:25:39,649 - INFO - ROLLBACK
+2025-05-31 18:25:52,972 - INFO - API iniciada
+2025-05-31 18:25:52,981 - INFO - BEGIN (implicit)
+2025-05-31 18:25:52,981 - INFO - PRAGMA main.table_info("roles")
+2025-05-31 18:25:52,982 - INFO - [raw sql] ()
+2025-05-31 18:25:52,984 - INFO - PRAGMA main.table_info("users")
+2025-05-31 18:25:52,984 - INFO - [raw sql] ()
+2025-05-31 18:25:52,985 - INFO - COMMIT
+2025-05-31 18:26:13,104 - INFO - BEGIN (implicit)
+2025-05-31 18:26:13,113 - INFO - SELECT users.id, users.username, users.email, users.hashed_password, users.is_active, users.is_superuser, users.role_id 
+FROM users 
+WHERE users.email = ?
+2025-05-31 18:26:13,114 - INFO - [generated in 0.00090s] ('julio@teaastaaae.com',)
+2025-05-31 18:26:13,118 - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "E:\auth_api\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-05-31 18:26:13,520 - INFO - INSERT INTO users (username, email, hashed_password, is_active, is_superuser, role_id) VALUES (?, ?, ?, ?, ?, ?)
+2025-05-31 18:26:13,520 - INFO - [generated in 0.00067s] ('juliaaao', 'julio@teaastaaae.com', '$2b$12$57RanipmZ.29uA9GVa93a.kBHZgwjFnq7S96Rc8MIFOvkP9eqLiNy', 1, 0, None)
+2025-05-31 18:26:13,522 - INFO - ROLLBACK
+2025-05-31 18:26:38,678 - INFO - BEGIN (implicit)
+2025-05-31 18:26:38,679 - INFO - SELECT users.id, users.username, users.email, users.hashed_password, users.is_active, users.is_superuser, users.role_id 
+FROM users 
+WHERE users.email = ?
+2025-05-31 18:26:38,679 - INFO - [cached since 25.57s ago] ('julio@teaastaaae.com',)
+2025-05-31 18:26:39,050 - INFO - INSERT INTO users (username, email, hashed_password, is_active, is_superuser, role_id) VALUES (?, ?, ?, ?, ?, ?)
+2025-05-31 18:26:39,051 - INFO - [cached since 25.53s ago] ('juliaaaaaao', 'julio@teaastaaae.com', '$2b$12$FtusaJyNWcyr.c99XeTfPu1cSZDPRmSd38HTJ/K3m4MK0B/AKtsyG', 1, 0, None)
+2025-05-31 18:26:39,054 - INFO - COMMIT
+2025-05-31 18:26:39,097 - INFO - Novo usuário registrado: julio@teaastaaae.com
+2025-05-31 18:26:49,946 - INFO - BEGIN (implicit)
+2025-05-31 18:26:49,947 - INFO - SELECT users.id, users.username, users.email, users.hashed_password, users.is_active, users.is_superuser, users.role_id 
+FROM users 
+WHERE users.email = ?
+2025-05-31 18:26:49,947 - INFO - [cached since 36.83s ago] ('julio@teaastaaae.com',)
+2025-05-31 18:26:50,319 - INFO - Usuário autenticado com sucesso: julio@teaastaaae.com
+2025-05-31 18:26:50,320 - INFO - ROLLBACK
+2025-05-31 18:28:50,293 - INFO - API iniciada
+2025-05-31 18:28:50,301 - INFO - BEGIN (implicit)
+2025-05-31 18:28:50,302 - INFO - PRAGMA main.table_info("roles")
+2025-05-31 18:28:50,302 - INFO - [raw sql] ()
+2025-05-31 18:28:50,304 - INFO - PRAGMA main.table_info("users")
+2025-05-31 18:28:50,305 - INFO - [raw sql] ()
+2025-05-31 18:28:50,306 - INFO - COMMIT
+2025-05-31 18:28:53,750 - INFO - API iniciada
+2025-05-31 18:28:53,758 - INFO - BEGIN (implicit)
+2025-05-31 18:28:53,759 - INFO - PRAGMA main.table_info("roles")
+2025-05-31 18:28:53,759 - INFO - [raw sql] ()
+2025-05-31 18:28:53,762 - INFO - PRAGMA main.table_info("users")
+2025-05-31 18:28:53,762 - INFO - [raw sql] ()
+2025-05-31 18:28:53,764 - INFO - COMMIT
+2025-05-31 18:28:57,057 - INFO - API iniciada
+2025-05-31 18:28:57,064 - INFO - BEGIN (implicit)
+2025-05-31 18:28:57,065 - INFO - PRAGMA main.table_info("roles")
+2025-05-31 18:28:57,065 - INFO - [raw sql] ()
+2025-05-31 18:28:57,067 - INFO - PRAGMA main.table_info("users")
+2025-05-31 18:28:57,067 - INFO - [raw sql] ()
+2025-05-31 18:28:57,069 - INFO - COMMIT
+2025-05-31 18:29:24,009 - INFO - API iniciada
+2025-05-31 18:29:24,017 - INFO - BEGIN (implicit)
+2025-05-31 18:29:24,018 - INFO - PRAGMA main.table_info("roles")
+2025-05-31 18:29:24,018 - INFO - [raw sql] ()
+2025-05-31 18:29:24,021 - INFO - PRAGMA main.table_info("users")
+2025-05-31 18:29:24,021 - INFO - [raw sql] ()
+2025-05-31 18:29:24,023 - INFO - COMMIT
+2025-05-31 18:29:26,152 - INFO - API iniciada
+2025-05-31 18:29:26,160 - INFO - BEGIN (implicit)
+2025-05-31 18:29:26,160 - INFO - PRAGMA main.table_info("roles")
+2025-05-31 18:29:26,161 - INFO - [raw sql] ()
+2025-05-31 18:29:26,162 - INFO - PRAGMA main.table_info("users")
+2025-05-31 18:29:26,163 - INFO - [raw sql] ()
+2025-05-31 18:29:26,164 - INFO - COMMIT
+2025-05-31 18:29:32,776 - INFO - API iniciada
+2025-05-31 18:29:32,785 - INFO - BEGIN (implicit)
+2025-05-31 18:29:32,785 - INFO - PRAGMA main.table_info("roles")
+2025-05-31 18:29:32,785 - INFO - [raw sql] ()
+2025-05-31 18:29:32,788 - INFO - PRAGMA main.table_info("users")
+2025-05-31 18:29:32,788 - INFO - [raw sql] ()
+2025-05-31 18:29:32,790 - INFO - COMMIT
+2025-05-31 18:29:41,871 - INFO - BEGIN (implicit)
+2025-05-31 18:29:41,879 - INFO - SELECT users.id, users.username, users.email, users.hashed_password, users.is_active, users.is_superuser, users.role_id 
+FROM users 
+WHERE users.email = ?
+2025-05-31 18:29:41,880 - INFO - [generated in 0.00084s] ('julio@teaastaaae.com',)
+2025-05-31 18:29:41,885 - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "E:\auth_api\venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-05-31 18:29:42,281 - INFO - Usuário autenticado com sucesso: julio@teaastaaae.com
+2025-05-31 18:29:42,282 - INFO - ROLLBACK
+2025-05-31 18:31:54,803 - INFO - BEGIN (implicit)
+2025-05-31 18:31:54,804 - INFO - SELECT users.id, users.username, users.email, users.hashed_password, users.is_active, users.is_superuser, users.role_id 
+FROM users 
+WHERE users.email = ?
+2025-05-31 18:31:54,804 - INFO - [cached since 132.9s ago] ('jovem@gmail.com',)
+2025-05-31 18:31:55,173 - INFO - INSERT INTO users (username, email, hashed_password, is_active, is_superuser, role_id) VALUES (?, ?, ?, ?, ?, ?)
+2025-05-31 18:31:55,174 - INFO - [generated in 0.00078s] ('jovem', 'jovem@gmail.com', '$2b$12$3IFFZfj5eBkBCCIddYNRqui0JffTMoRKjUM9lroF6mgU5fVVefxiG', 1, 0, None)
+2025-05-31 18:31:55,178 - INFO - COMMIT
+2025-05-31 18:31:55,241 - INFO - Novo usuário registrado: jovem@gmail.com
+2025-05-31 18:32:08,226 - INFO - BEGIN (implicit)
+2025-05-31 18:32:08,226 - INFO - SELECT users.id, users.username, users.email, users.hashed_password, users.is_active, users.is_superuser, users.role_id 
+FROM users 
+WHERE users.email = ?
+2025-05-31 18:32:08,227 - INFO - [cached since 146.3s ago] ('jovem@gmail.com',)
+2025-05-31 18:32:08,602 - INFO - Usuário autenticado com sucesso: jovem@gmail.com
+2025-05-31 18:32:08,602 - INFO - ROLLBACK
+2025-05-31 18:32:13,388 - INFO - BEGIN (implicit)
+2025-05-31 18:32:13,389 - INFO - SELECT users.id, users.username, users.email, users.hashed_password, users.is_active, users.is_superuser, users.role_id 
+FROM users 
+WHERE users.id = ?
+2025-05-31 18:32:13,390 - INFO - [generated in 0.00056s] (14,)
+2025-05-31 18:32:13,391 - INFO - ROLLBACK
+2025-05-31 18:32:13,392 - INFO - BEGIN (implicit)
+2025-05-31 18:32:13,393 - INFO - SELECT users.id, users.username, users.email, users.hashed_password, users.is_active, users.is_superuser, users.role_id 
+FROM users 
+WHERE users.id = ?
+2025-05-31 18:32:13,393 - INFO - [cached since 0.004053s ago] (14,)
+2025-05-31 18:32:13,402 - INFO - DELETE FROM users WHERE users.id = ?
+2025-05-31 18:32:13,402 - INFO - [generated in 0.00055s] (14,)
+2025-05-31 18:32:13,405 - INFO - COMMIT
+2025-05-31 18:32:23,877 - INFO - BEGIN (implicit)
+2025-05-31 18:32:23,877 - INFO - SELECT users.id, users.username, users.email, users.hashed_password, users.is_active, users.is_superuser, users.role_id 
+FROM users 
+WHERE users.email = ?
+2025-05-31 18:32:23,878 - INFO - [cached since 162s ago] ('jovem@gmail.com',)
+2025-05-31 18:32:23,880 - WARNING - Tentativa de login inválida para: jovem@gmail.com
+2025-05-31 18:32:23,880 - INFO - ROLLBACK
